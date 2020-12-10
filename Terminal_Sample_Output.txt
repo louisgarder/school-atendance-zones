@@ -1,0 +1,56 @@
+Last login: Wed Dec  9 15:58:40 on ttys000
+raymond@raymonds-mbp ~ % /var/folders/zw/mt9qc1_x2bq5n8q71vdpr6yc0000gn/T/tmpaWpRvz ; exit;
+
+This program will attempt to create desegregated school attendence zones for a given region using race demographics of the US census block groups in the regionEach block group will be assigned to a school in order to create school attendence zones with racial demographics that reflect the racial demographics of the overall regionEach school attendence zone will also attempt to contain similar populations and minimize traveling distances for each student. However, these last two criteria are valued substantially less, as a zone with more students can simply contain more schools
+
+What is the name of the region where the school attendence zones will be created?
+Phoenix
+How many school attendence zones (number of schools) should be created?
+30
+
+Please enter the file that contains the block group data in the required format for Phoenix.
+MaricopaCountyData.txt
+
+How many different configurations of attendance zones would you like to receive?
+2
+
+How many simulations should be run to find the best 2 configurations?
+The more simulations that are run, the more likely a better configuration will be found. However, more simulations requires more runtime.
+1000
+
+Please wait. Simulations are being run and the top 2 configurations with optimal school attendance zones will be found.
+
+Top 2 optimal configurations have been found. What is the output file name to view these configurations?
+MaricopaCountyOutputFile.txt
+
+Data has been saved to MaricopaCountyOutputFile.txt.
+Press <RETURN> to close this window...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
