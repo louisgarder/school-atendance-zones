@@ -14,4 +14,7 @@ HEADERS += \
 DISTFILES += \
     Maricopa County Data.csv \
     Maricopa County Data.csv \
-    MaricopaCountyData.txt
+    MaricopaCountyData.csv \
+    MaricopaCountyData.txt \
+    MaricopaCountyOutputFile.txt \
+    Terminal_Sample_Output.txt
