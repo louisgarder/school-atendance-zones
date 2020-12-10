@@ -20,10 +20,10 @@ int main()
 {
     intro();
 
-    cout << "What is the name of the region where the school attendence zones will be created?" << endl;
+    cout << "What is the name of the region where the school attendance zones will be created?" << endl;
     string nameOfRegion;
     cin >> nameOfRegion;
-    cout << "How many school attendence zones (number of schools) should be created?"<< endl;
+    cout << "How many school attendance zones (number of schools) should be created?"<< endl;
     int numOfZones;
     cin >> numOfZones;
 
@@ -111,9 +111,9 @@ int main()
  * Sets up the output console
  */
 void intro(){
-    cout << endl<< "This program will attempt to create desegregated school attendence zones for a given region using race demographics of the US census block groups in the region";
-    cout << "Each block group will be assigned to a school in order to create school attendence zones with racial demographics that reflect the racial demographics of the overall region";
-    cout << "Each school attendence zone will also attempt to contain similar populations and minimize traveling distances for each student. However, these last two criteria are valued substantially less, as a zone with more students can simply contain more schools" << endl;
+    cout << endl<< "This program will attempt to create desegregated school attendance zones for a given region using race demographics of the US census block groups in the region. ";
+    cout << "Each block group will be assigned to a school in order to create school attendance zones with racial demographics that reflect the racial demographics of the overall region. ";
+    cout << "Each school attendance zone will also attempt to contain similar populations and minimize traveling distances for each student. However, these last two criteria are valued substantially less, as a zone with more students can simply contain more schools" << endl;
     cout << endl;
 }
 
