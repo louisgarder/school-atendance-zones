@@ -1,7 +1,7 @@
 # school-atendance-zones
 Program to create desegregated school attendance zones in a region using US census data
 
-This is one of of the first programs that attempts to create desegregated school attendance zones using race/ethnicity demographic data from the US census. A school attendance zone
+This is one of of the first programs that attempts to create desegregated school attendance zones using race/ethnicity demographic data from the US census database. A school attendance zone
 is an outlined region where students will attend public school. A common problem with current school attendance zones is that the race demographics of these 
 attendance zones often don't reflect the demographics of the overal region (district, city). These "segregated" school attendance zones are a consequence of segregated
 neighborhoods in districts and cities. Therefore, this program utilizes an algorithm that combines US census data of block groups (https://en.wikipedia.org/wiki/Census_block_group)
