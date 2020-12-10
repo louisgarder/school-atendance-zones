@@ -38,5 +38,8 @@ https://www.census.gov/geographies/reference-files/time-series/geo/centers-popul
 a sample CSV file (MaricopaCountyData.csv) is also provided. When selecting how many simulations to run, it is important to note that more simulations leads
 to a higher possibility of finding a more diverse school attendance zone configuration; however, this also requries more runtime. 
 
+The current code only accounts for "white" and "black or African American" demographics. However for any region where other race/ethnicities are a significant
+demogrpahic, the code can easily be edited to add in these changes.
+
 Algorithm and all code was developed/written by Raymond Suo. For any other questions on how to use or run this project, please contact Raymond Suo at rms7988@gmail.com
 
