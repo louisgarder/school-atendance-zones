@@ -47,6 +47,11 @@ int main()
     cout << "The more simulations that are run, the more likely a better configuration will be found. However, more simulations requires more runtime." << endl;
     int numberOfSimulations;
     cin >> numberOfSimulations;
+    while(numberOfSimulations < numberOfConfigurations){
+        cout << "Number of simulations run has to be at least " << numberOfConfigurations <<"." << endl;
+         cout << endl << "How many simulations should be run to find the best " << numberOfConfigurations << " configurations?" << endl;
+         cin >> numberOfSimulations;
+    }
 
     cout << endl << "Please wait. Simulations are being run and the top " << numberOfConfigurations << " configurations with optimal school attendance zones will be found." << endl << endl;
 
@@ -89,7 +94,10 @@ int main()
             outFile << "\tSchool Attendance Zone " << y << ":" << endl;
             for (int z = 0; z < (int) possibleConfigurations[x-1][y-1].blockGroups.size(); z++){
                 outFile << "\t\t" << possibleConfigurations[x-1][y-1].blockGroups[z].GEO_ID;
-                outFile << "\t" << possibleConfigurations[x-1][y-1].blockGroups[z].name << endl;
+                outFile << "\t" << possibleConfigurations[x-1][y-1].blockGroups[z].name;
+                outFile << "\tLongitude: " << possibleConfigurations[x-1][y-1].blockGroups[z].longitude;
+                outFile << "\tLatitude: " << possibleConfigurations[x-1][y-1].blockGroups[z].latitutde << endl;
+
                 totalPopulation += possibleConfigurations[x-1][y-1].blockGroups[z].total;
                 whitePopulation += possibleConfigurations[x-1][y-1].blockGroups[z].white;
                 blackPopulation += possibleConfigurations[x-1][y-1].blockGroups[z].black;
@@ -131,6 +139,17 @@ BlockGroup* createBlockGroups(string nameOfRegion, int &numOfBlockGroups){
     ifstream in(fileName);
     string str;
     int numOfLines = 0;
+
+    while(!in.is_open())
+        {
+            cout << endl << "File was not found. Please enter a valid file name and path." << endl;
+            cin >> fileName;
+            in.clear();
+            in.close();
+            in.open(fileName);
+        }
+
+
     //Counting number of block groups in file
     while (getline(in, str)){
         numOfLines++;
