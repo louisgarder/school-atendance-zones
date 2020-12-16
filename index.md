@@ -1,37 +1,7 @@
-## Welcome to School Attendance Zone Creator
+### What are school attendance zones and what is the purpose of this project?
 
-You can use the [editor on GitHub](https://github.com/louisgarder/school-atendance-zones/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+School attendance zones are defined as the outlines in a school district where students will attend public schools. General requirements for schoool attendance zones are contiguity and compactness in shape in order to minimize travel distances for students. A major problem with current school attendance zones is that they are often created without consideration of the racial/ethnic demographics in zones; Because many regions in the US are still segregated, this consequently leads to the creation of segregated school attendane zones and segregated classrooms. **The purpose of this project is to create school attendance zones for a region that have racial/ethnic demographics that beter reflect the demographics of the overall region while still mantaining contiguity and compactness.**  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Overview of the project
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/louisgarder/school-atendance-zones/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+In order to create more desegregated school attendance zones, this project is one of the first computer programs to utilize US demographic data of Census Block Groups, the smallest geographical unit for which the bureau publishes sample data. In a completely novel algorithm, the program first determines the census blocks in the region that are the most desegregated and then uses these more diverse areas as the center nodes of the attendance zones. Each remaining census block is then matched to its closest center node, creating attendance zones that are compact and contiguous. Because the attendance zones are centered around desegregated census blocks, which are often situated between segregated areas, the zones are consequently able to combine together different demographics into a more diverse classroom. 
