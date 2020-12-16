@@ -5,3 +5,6 @@ School attendance zones are defined as the outlines in a school district where s
 ### Overview of the project
 
 In order to create more desegregated school attendance zones, this project is one of the first computer programs to utilize US demographic data of Census Block Groups, the smallest geographical unit for which the bureau publishes sample data. In a completely novel algorithm, the program first determines the census blocks in the region that are the most desegregated and then uses these more diverse areas as the center nodes of the attendance zones. Each remaining census block is then matched to its closest center node, creating attendance zones that are compact and contiguous. Because the attendance zones are centered around desegregated census blocks, which are often situated between segregated areas, the zones are consequently able to combine together different demographics into a more diverse classroom. 
+
+<img width="443" alt="Screen Shot 2020-12-15 at 10 25 50 PM" src="https://user-images.githubusercontent.com/32240284/102301298-7d63d800-3f24-11eb-9a72-bf8de92e2674.png">
+
